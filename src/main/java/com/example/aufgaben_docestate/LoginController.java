@@ -1,2 +1,12 @@
-package com.example.aufgaben_docestate;public class LoginController {
+package com.example.aufgaben_docestate;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+class LoginController {
+    @GetMapping("/login")
+    String login() {
+        return "login";
+    }
 }
